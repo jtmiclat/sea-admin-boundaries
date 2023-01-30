@@ -4,7 +4,14 @@ Access South East Asian admin boundaries in better formats.
 
 ## Accessing the data
 
-These files are hosted in https://opendata.jtmiclat.me
+These files are hosted in https://opendata.jtmiclat.me.
+It follows the format of `https://opendata.jtmiclat.me/{COUNTRY_CODE}/admin{ADMIN_LEVEL}.{FILE_FORMAT}`
+
+The current available countries are Philippines (PH), Thailand (TH), and Indonesia (ID).
+
+The current available file formats are FlatGeobuf (.fgb), Geoparquet (.geoparquet), and GeoPackage (.gpkg).
+
+Admin level are from 0-3.
 
 ### Basic usage
 
@@ -32,3 +39,4 @@ This was for me to play around with using different geospatial file formats and 
 
 - [ ] Add other SEA countries
 - [ ] Benchmark geoparquet compression and select one
+- [ ] Add indexing of flatgeobuf
