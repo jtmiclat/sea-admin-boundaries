@@ -15,6 +15,8 @@ Admin level are from 0-3.
 
 ### Basic usage
 
+I recommend sticking with flatgeobuff for reading as geoparquet is still in beta and geopacakge is less efficient for reads.
+
 ```python
 import geopandas as gpd
 gdf = gpd.read_file("https://opendata.jtmiclat.me/PH/admin3.fgb")
