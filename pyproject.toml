@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sea-admin-boundaries"
+version = "0.1.0"
+description = "Admin boundaries for South East Asian Countries"
+authors = ["Jt Miclat <jtmiclat@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "sea_admin_boundaries"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+geopandas = "^0.12.2"
+pyarrow = "^10.0.1"
+httpx = "^0.23.3"
+hdx-python-api = "^5.9.6"
+pyogrio = "^0.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.8.0"
+black = "^22.12.0"
+ruff = "^0.0.231"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,45 @@
+- country: Philippines
+  isocode: PH
+  download:
+    - dataset: 'cod-ab-phl'
+      resource: 'phl_adminboundaries_candidate_adm3.zip'
+    - dataset: 'cod-ab-phl'
+      resource: 'phl_adminboundaries_candidate_exclude_adm3.zip'
+  processing:
+    - source: 'phl_adminboundaries_candidate_exclude_adm3.zip!phl_admbnda_adm0_psa_namria_20200529.shp'
+      output: 'admin0'
+    - source: 'phl_adminboundaries_candidate_exclude_adm3.zip!phl_admbnda_adm1_psa_namria_20200529.shp'
+      output: 'admin1'
+    - source: 'phl_adminboundaries_candidate_exclude_adm3.zip!phl_admbnda_adm2_psa_namria_20200529.shp'
+      output: 'admin2'
+    - source: 'phl_adminboundaries_candidate_adm3.zip'
+      output: 'admin3'
+- country: Thailand
+  isocode: TH
+  download:
+    - dataset: 'cod-ab-tha'
+      resource: 'tha_adm_rtsd_itos_20210121_SHP.zip'
+  processing:
+    - source: 'tha_adm_rtsd_itos_20210121_SHP.zip!tha_admbnda_adm0_rtsd_20220121.shp'
+      output: 'admin0'
+    - source: 'tha_adm_rtsd_itos_20210121_SHP.zip!tha_admbnda_adm1_rtsd_20220121.shp'
+      output: 'admin1'
+    - source: 'tha_adm_rtsd_itos_20210121_SHP.zip!tha_admbnda_adm2_rtsd_20220121.shp'
+      output: 'admin2'
+    - source: 'tha_adm_rtsd_itos_20210121_SHP.zip!tha_admbnda_adm3_rtsd_20220121.shp'
+      output: 'admin3'
+
+- country: Indonesia
+  isocode: ID
+  download:
+    - dataset: 'cod-ab-idn'
+      resource: 'idn_adm_bps_20200401_SHP.zip'
+  processing:
+    - source: 'idn_adm_bps_20200401_SHP.zip!idn_admbnda_adm0_bps_20200401.shp'
+      output: 'admin0'
+    - source: 'idn_adm_bps_20200401_SHP.zip!idn_admbnda_adm1_bps_20200401.shp'
+      output: 'admin1'
+    - source: 'idn_adm_bps_20200401_SHP.zip!idn_admbnda_adm2_bps_20200401.shp'
+      output: 'admin2'
+    - source: 'idn_adm_bps_20200401_SHP.zip!idn_admbnda_adm3_bps_20200401.shp'
+      output: 'admin3'
