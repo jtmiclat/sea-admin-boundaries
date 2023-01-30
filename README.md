@@ -21,6 +21,29 @@ gdf = gpd.read_file("https://opendata.jtmiclat.me/PH/admin3.fgb")
 gdf.plot()
 ```
 
+### Advance usage
+
+Selecting geometries by attribute value
+
+```python
+import pyogrio
+
+gdf = pyogrio.read_dataframe(
+    "https://opendata.jtmiclat.me/ID/admin3.fgb",
+    where="ADM2_PCODE = 'ID9401'"
+)
+```
+
+Selecting geometries by bbox value
+
+```python
+import pyogrio
+gdf = pyogrio.read_dataframe(
+    "https://opendata.jtmiclat.me/PH/admin3.fgb",
+    bbox=(120.7584, 4.2314, 128.9682, 9.4687)
+)
+```
+
 ## Source of Data
 
 Data is from [The Humanitarian Data Exchange](https://data.humdata.org/).
