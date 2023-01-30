@@ -1,6 +1,6 @@
 # Scripts for saving admin boundaries of South East Asian countries in better geofile formats
 
-Access South East Asian admin boundaries in better formats.
+Access South East Asian admin boundaries in better formats than [shapefiles](http://switchfromshapefile.org/)
 
 ## Accessing the data
 
