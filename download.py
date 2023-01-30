@@ -23,7 +23,10 @@ def download_file(dataset_name, resource_name):
         datasets[dataset_name] = dataset
     resource = next(r for r in dataset.resources if r["name"] == resource_name)
     url, filename = resource.download("data/staging/")
-    os.rename(filename, filename.replace('.shp', ''))
+
+    # hdx python api appends a .SHP to the end of the filename.
+    # Undo this action as it conflicts with geopandas read_file for zips
+    os.rename(filename, filename.replace(".shp", ""))
 
 
 def process_file(source, output, isocode):

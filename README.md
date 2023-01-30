@@ -10,7 +10,7 @@ These files are hosted in https://opendata.jtmiclat.me
 
 ```python
 import geopandas as gpd
-gdf = gpd.read_file("https://opendata.jtmiclet.me/PH/admin3.fgb")
+gdf = gpd.read_file("https://opendata.jtmiclat.me/PH/admin3.fgb")
 gdf.plot()
 ```
 
@@ -32,3 +32,4 @@ This was for me to play around with using different geospatial file formats and 
 
 - [ ] Add other SEA countries
 - [ ] Benchmark geoparquet compression and select one
+- [ ] Add GPKG file format support
