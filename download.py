@@ -36,6 +36,12 @@ def process_file(source, output, isocode):
         gdf, f"data/processed/{isocode}/{output}.fgb", driver="FlatGeobuf"
     )
     gdf.to_parquet(f"data/processed/{isocode}/{output}.geoparquet")
+    pyogrio.write_dataframe(
+        gdf,
+        f"data/processed/{isocode}/{output}.gpkg",
+        driver="GPKG",
+        layer=f"{output}",
+    )
 
 
 for country in config:

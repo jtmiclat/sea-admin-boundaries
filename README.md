@@ -32,4 +32,3 @@ This was for me to play around with using different geospatial file formats and 
 
 - [ ] Add other SEA countries
 - [ ] Benchmark geoparquet compression and select one
-- [ ] Add GPKG file format support
