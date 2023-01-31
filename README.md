@@ -55,6 +55,10 @@ Country Specific URLs:
 - [Philippines](https://data.humdata.org/dataset/cod-ab-phl)
 - [Thailand](https://data.humdata.org/dataset/cod-ab-tha)
 - [Indonesia](https://data.humdata.org/dataset/cod-ab-ind)
+- [Malaysia](https://data.humdata.org/dataset/cod-ab-mys)
+- [Vietnam](https://data.humdata.org/dataset/cod-ab-vnm)
+- [Cambodia](https://data.humdata.org/dataset/cod-ab-khm)
+- [Laos](https://data.humdata.org/dataset/cod-ab-loas)
 
 ## Notes
 
@@ -63,5 +67,7 @@ This was for me to play around with using different geospatial file formats and 
 ## TODO:
 
 - [ ] Add other SEA countries
-- [ ] Benchmark geoparquet compression and select one
-- [ ] Add indexing of flatgeobuf
+  - [ ] Singpore
+  - [ ] Brunei
+  - [ ] Myanmar
+- [ ] Select compression for geoparquet

@@ -28,7 +28,6 @@
       output: 'admin2'
     - source: 'tha_adm_rtsd_itos_20210121_SHP.zip!tha_admbnda_adm3_rtsd_20220121.shp'
       output: 'admin3'
-
 - country: Indonesia
   isocode: ID
   download:
@@ -43,3 +42,60 @@
       output: 'admin2'
     - source: 'idn_adm_bps_20200401_SHP.zip!idn_admbnda_adm3_bps_20200401.shp'
       output: 'admin3'
+- country: Malaysia
+  isocode: MY
+  download:
+    - dataset: 'cod-ab-mys'
+      resource: 'mys_admb_unhcr_20210211_SHP.zip'
+  processing:
+    - source: 'mys_admb_unhcr_20210211_SHP.zip!mys_admbnda_adm0_unhcr_20210211.shp'
+      output: 'admin0'
+    - source: 'mys_admb_unhcr_20210211_SHP.zip!mys_admbnda_adm1_unhcr_20210211.shp'
+      output: 'admin1'
+    - source: 'mys_admb_unhcr_20210211_SHP.zip!mys_admbnda_adm2_unhcr_20210211.shp'
+      output: 'admin2'
+- country: Vietnam
+  isocode: VN
+  download:
+    - dataset: 'cod-ab-vnm'
+      resource: 'vnm_adm_gov_20201027.zip'
+  processing:
+    - source: 'vnm_adm_gov_20201027.zip!vnm_admbnda_adm0_gov_20200103.shp'
+      output: 'admin0'
+    - source: 'vnm_adm_gov_20201027.zip!vnm_admbnda_adm1_gov_20201027.shp'
+      output: 'admin1'
+    - source: 'vnm_adm_gov_20201027.zip!vnm_admbnda_adm2_gov_20201027.shp'
+      output: 'admin2'
+- country: Cambodia
+  isocode: KH
+  download:
+    - dataset: 'cod-ab-khm'
+      resource: 'khm_admbnda_adm0_gov_20181004.zip'
+    - dataset: 'cod-ab-khm'
+      resource: 'khm_admbnda_adm1_gov_20181004.zip'
+    - dataset: 'cod-ab-khm'
+      resource: 'khm_admbnda_adm2_gov_20181004.zip'
+    - dataset: 'cod-ab-khm'
+      resource: 'khm_admbnda_adm3_gov_20181004.zip'
+  processing:
+    - source: 'khm_admbnda_adm0_gov_20181004.zip'
+      output: 'admin0'
+    - source: 'khm_admbnda_adm1_gov_20181004.zip'
+      output: 'admin1'
+    - source: 'khm_admbnda_adm2_gov_20181004.zip'
+      output: 'admin2'
+    - source: 'khm_admbnda_adm3_gov_20181004.zip'
+      output: 'admin3'
+
+- country: Laos
+  isocode: LA
+  download:
+    - dataset: 'cod-ab-lao'
+      resource: 'lao_adm_ngd_20191112_SHP.zip'
+  processing:
+    - source: 'lao_adm_ngd_20191112_SHP.zip!lao_adm_ngd_20191112_SHP/lao_admbnda_adm0_ngd_20191112.shp'
+      output: 'admin0'
+    - source: 'lao_adm_ngd_20191112_SHP.zip!lao_adm_ngd_20191112_SHP/lao_admbnda_adm1_ngd_20191112.shp'
+      output: 'admin1'
+    - source: 'lao_adm_ngd_20191112_SHP.zip!lao_adm_ngd_20191112_SHP/lao_admbnda_adm2_ngd_20191112.shp'
+      output: 'admin2'
