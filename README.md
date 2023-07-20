@@ -7,7 +7,7 @@ Access South East Asian admin boundaries in better formats than [shapefiles](htt
 These files are hosted in https://opendata.jtmiclat.me.
 It follows the format of `https://opendata.jtmiclat.me/{COUNTRY_CODE}/admin{ADMIN_LEVEL}.{FILE_FORMAT}`
 
-The current available countries are Philippines (PH), Thailand (TH), and Indonesia (ID).
+The current available countries are Philippines (PH), Thailand (TH), Malaysia (MY), Cambodia (KH), Vietnam (VM), Laos (LA), and Indonesia (ID).
 
 The current available file formats are FlatGeobuf (.fgb), Geoparquet (.geoparquet), and GeoPackage (.gpkg).
 
@@ -49,7 +49,6 @@ gdf = pyogrio.read_dataframe(
 ## Source of Data
 
 Data is from [The Humanitarian Data Exchange](https://data.humdata.org/).
-
 Country Specific URLs:
 
 - [Philippines](https://data.humdata.org/dataset/cod-ab-phl)
